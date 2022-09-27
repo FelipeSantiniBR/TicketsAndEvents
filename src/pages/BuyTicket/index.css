@@ -1,0 +1,9 @@
+.search-event{
+    width: 550px;
+    height: 30px;
+    border-radius: 10px;
+    box-shadow: none;
+    margin-left: 30%;
+    padding-left: 20px;
+    margin-top: 25px;
+}

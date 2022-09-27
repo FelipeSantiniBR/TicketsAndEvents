@@ -1,0 +1,104 @@
+#page-search-results {
+    width: 90%;
+    max-width:1100px;
+
+    margin: 0 auto ;
+}
+
+#page-create-event .content h3 {
+    font-size: 50px;
+    margin: 2px 0;
+}
+
+main {
+   margin: 55px;
+
+}
+
+main h4 {
+    margin: 50px 0 10px 0;
+
+    font-weight: normal;
+    font-family: Roboto, sans-serif;
+
+}
+
+main .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: 24px;
+}
+
+main .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+
+    border-radius: 8px 8px 0 0;
+}
+
+main .card h1 {
+    margin-top: 15px;
+    font-size: 30px;
+    line-height: 30px;
+
+    color: var(--title-color);
+}
+
+main .card h2, h3, h4 {
+    margin: 2px 0;
+
+    font-family: Roboto;
+    font-style: bold;
+
+    line-height: 35px;
+}
+
+main .card h2 {
+    font-size: 18px;
+    color: var(--primary-color);
+
+    line-height: 30px;
+
+}
+
+main .card h3 {
+    font-size: 18px;
+    color: #34CB79;
+}
+
+main .card h4 {
+    margin: 2px;
+
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+}
+
+main .card p {
+    font-size: 16px;
+    line-height: 26px;
+
+    color: #6c6c80 ;
+}
+
+main .card button {
+    width: 100px;
+    height: 40px;
+
+    background-color: var(--primary-color);
+
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+
+    border: 0;
+    border-radius: 8px;
+
+    margin-top: 8px;
+
+    cursor: pointer;
+
+    transition: background-color 400ms;
+}

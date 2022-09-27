@@ -1,0 +1,26 @@
+{
+  "event": [
+    {
+      "id": 1,
+      "image": "",
+      "name": "evento",
+      "title": "evento",
+      "start_date": "2021-06-30T09:00",
+      "state": "RS",
+      "city": "Caxias do Sul",
+      "description": "oi",
+      "price": 15
+    },
+    {
+      "id": 2,
+      "image": "",
+      "name": "evento",
+      "title": "evento",
+      "start_date": "2021-06-30T09:00",
+      "state": "RS",
+      "city": "Caxias do Sul",
+      "description": "oi",
+      "price": 15
+    }
+  ]
+}
