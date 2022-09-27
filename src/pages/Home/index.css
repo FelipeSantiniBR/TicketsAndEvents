@@ -1,5 +1,6 @@
 #page-home {
     height: 80vh;
+    background: url('../../../public/background-home.png') no-repeat;
     background-position: 50vw 5vw;
     background-size: 35%;
   }
