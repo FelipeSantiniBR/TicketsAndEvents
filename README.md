@@ -6,6 +6,7 @@
 </h3>
 
 - [Objetivos](#Objetivos)
+- [Resultados](#resultados)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Instalação](#Instalação)
 
@@ -15,6 +16,22 @@
 ## :bookmark: Objetivos
 
 O projeto teve como objetivo desenvolver um site de eventos, no qual é possível cadastrar seu evento e comprar ingressos para outros eventos.
+
+<a id="resultados"></a>
+
+## :heavy_check_mark: :computer: Resultados
+
+<h1 align="center">
+    <img alt="Web" src=".github/Home.png" width="900px">
+</h1>
+
+<h1 align="center">
+    <img alt="Web" src=".github/CreateEvent.png" width="900px">
+</h1>
+
+<h1 align="center">
+    <img alt="Web" src=".github/Events.png" width="900px">
+</h1>
 
 <a id="tecnologias-utilizadas"></a>
 
@@ -31,7 +48,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 
 <a id="Instalação"></a>
 
-## :bookmark: Instalação e Uso
+## :fire: Instalação e Uso
 
 1. Faça um clone :
 
