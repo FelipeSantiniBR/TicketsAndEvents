@@ -56,7 +56,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 1. Faça um clone :
 
 ```sh
-  $ git clone 
+  $ git clone https://github.com/FelipeSantiniBR/TicketsAndEvents.git
 ```
 
 2. Executando a Aplicação:
