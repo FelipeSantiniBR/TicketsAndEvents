@@ -31,6 +31,8 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 
 <a id="Instalação"></a>
 
+## :bookmark: Instalação e Uso
+
 1. Faça um clone :
 
 ```sh
