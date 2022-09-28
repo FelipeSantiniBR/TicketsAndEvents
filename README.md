@@ -22,15 +22,15 @@ O projeto teve como objetivo desenvolver um site de eventos, no qual é possíve
 ## :heavy_check_mark: :computer: Resultados
 
 <h1 align="center">
-    <img alt="Web" src=".github/Home.png" width="900px">
+    <img alt="Web" src=".github/Home.PNG" width="900px">
 </h1>
 
 <h1 align="center">
-    <img alt="Web" src=".github/CreateEvent.png" width="900px">
+    <img alt="Web" src=".github/CreateEvent.PNG" width="900px">
 </h1>
 
 <h1 align="center">
-    <img alt="Web" src=".github/Events.png" width="900px">
+    <img alt="Web" src=".github/Events.PNG" width="900px">
 </h1>
 
 <a id="tecnologias-utilizadas"></a>
