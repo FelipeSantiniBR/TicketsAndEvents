@@ -21,14 +21,17 @@ O projeto teve como objetivo desenvolver um site de eventos, no qual é possíve
 
 ## :heavy_check_mark: :computer: Resultados
 
+<h3 align="center">Pagina de Home</h3>
 <h1 align="center">
     <img alt="Web" src=".github/Home.PNG" width="900px">
 </h1>
 
+<h3 align="center">Pagina de criação de eventos</h3>
 <h1 align="center">
     <img alt="Web" src=".github/CreateEvent.PNG" width="900px">
 </h1>
 
+<h3 align="center">Pagina de listagem e compra de ingressos</h3>
 <h1 align="center">
     <img alt="Web" src=".github/Events.PNG" width="900px">
 </h1>
