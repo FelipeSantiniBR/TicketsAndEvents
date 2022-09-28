@@ -1,2 +1,6 @@
-Tickets & Events .
-App criado com o intuito de promover um boa interação do usuário para a criação de seus eventos e compra de ingressos para outros eventos.
+<h3 align="center">
+    <img alt="Logo" title="#logo" width="300px" src=".github/mblabs.png">
+    <br><br>
+    <b>Tickets & Events</b>
+    <br>
+</h3>
