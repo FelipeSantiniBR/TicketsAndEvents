@@ -92,7 +92,8 @@ main .card button {
     width: 100px;
     height: 40px;
     background-color: #006400;
-    margin-left: 35%;
+
+    margin-left: 5px;
     color: white;
     font-weight: bold;
     font-size: 16px;
@@ -104,4 +105,11 @@ main .card button {
 
     transition: background-color 400ms;
 
+}
+
+.quantity{
+    width: 100px;
+    height: 40px;
+    margin-left: 20%;
+    background-color: #a5a5b3;
 }

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "../CreateEvent/index.css";
 import "../../styles/global.css";
-import { Link } from "react-router-dom";
 import { Header } from "../../components/Header";
+import { AiFillHome } from "react-icons/ai";
 
 function CreateEvent() {
   const [file, setFile] = useState("");
@@ -18,6 +18,10 @@ function CreateEvent() {
   return (
     <>
       <Header />
+      <a href="/">
+        <AiFillHome />
+        Voltar para home
+      </a>
       <div id="page-create-event">
         <form className="formEvent">
           <h1>Cadastre seu Evento</h1>
@@ -122,9 +126,6 @@ function CreateEvent() {
             </div>
           </fieldset>
 
-          <Link to={"/"}>
-            <button>Retornar para home</button>
-          </Link>
           <button type="submit">Cadastrar evento</button>
         </form>
       </div>

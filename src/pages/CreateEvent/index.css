@@ -77,14 +77,18 @@ form  button {
 
     transition: background-color 500ms;
     align-items: center;
-    margin-left: 10px;
-}
-
-form :link{
-    margin-left: 180px;
+    margin-left: 460px;
 }
 
 form  button:hover {
     background-color: #7B68EE;
 
 }
+
+a {
+    display: flex;
+    margin-left: 1270px;
+    color: #FF8C00;
+    font-weight: bold;
+    font-size: 20px;
+  }
