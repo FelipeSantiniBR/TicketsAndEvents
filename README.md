@@ -7,7 +7,7 @@
 
 - [Objetivos](#Objetivos)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Instalação](# Instalação)
+- [Instalação](#Instalação)
 
 
 <a id="Objetivos"></a>
@@ -29,7 +29,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 - [Typescript](https://www.typescriptlang.org/)
 - [AXIOS](https://axios-http.com/ptbr/docs/intro)
 
-<a id="instalacao"></a>
+<a id="Instalação"></a>
 
 1. Faça um clone :
 
