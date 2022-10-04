@@ -39,7 +39,7 @@ O projeto teve como objetivo desenvolver um site de eventos, no qual é possíve
 ## :heavy_check_mark: :computer: Resultado Web
 
 <h1 align="center">
-    <img alt="Web" src="" width="900px">
+    <img alt="Web" src=".github/web.mp4" width="900px">
 </h1>
 
 <a id="tecnologias-utilizadas"></a>
