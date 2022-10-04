@@ -1,0 +1,33 @@
+#modal2 {
+    background-color: #0E0A14ef;
+
+    height: 100vh;
+    width: 100vw;
+
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 400ms;
+  }
+
+  #modal2.hide {
+    display: none;
+  }
+
+
+#modal2 h1{
+    color: green;
+    text-align: center;
+    font-size: 50px;
+}
+
+#modal2 a{
+    color: aliceblue;
+    text-align: center;
+    margin-right: 1300px;
+}
+

@@ -1,15 +1,22 @@
-import { createContext, ReactNode, useContext, useEffect, useState } from "react";
+import {
+  createContext,
+  ReactNode,
+  useContext,
+  useEffect,
+  useState,
+} from "react";
 import { api } from "./services/api";
 
-interface Event {
+export interface Event {
+  base64: string;
   id: number;
-  image: string;
+  file: string;
   name: string;
   title: string;
-  start_date: string;
+  date: string;
+  time: string;
   state: string;
   city: string;
-  description: string;
   price: number;
 }
 
@@ -21,7 +28,9 @@ interface EventsProviderProps {
 
 interface EventsContextData {
   event: Event[];
-  createEvent: (event: EventInput) => Promise<void>;
+  newEvent: (event: EventInput) => Promise<void>;
+  base64: string;
+  setBase64: React.Dispatch<React.SetStateAction<string>>;
 }
 
 export const EventsContext = createContext<EventsContextData>(
@@ -30,29 +39,28 @@ export const EventsContext = createContext<EventsContextData>(
 
 export function EventsProvider({ children }: EventsProviderProps) {
   const [event, setEvent] = useState<Event[]>([]);
+  const [base64, setBase64] = useState<string>("");
 
   useEffect(() => {
     api.get("/event").then((response) => setEvent(response.data));
   }, []);
 
-  async function createEvent(EventInput: EventInput) {
+  async function newEvent(EventInput: EventInput) {
     const response = await api.post("/event", {
       ...EventInput,
-      start_date: Date.now(),
+      date: Date.now(),
     });
-    const { events } = response.data;
-
-    setEvent([...event, events]);
+    setEvent([...event, response.data]);
   }
 
   return (
-    <EventsContext.Provider value={{ event, createEvent }}>
+    <EventsContext.Provider value={{ event, newEvent, base64, setBase64 }}>
       {children}
     </EventsContext.Provider>
   );
 }
 
 export function useEvent() {
-    const context = useContext(EventsContext);
-    return context;
-  }
+  const context = useContext(EventsContext);
+  return context;
+}

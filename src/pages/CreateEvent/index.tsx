@@ -1,19 +1,46 @@
-import { useState } from "react";
+import { FormEvent, useContext, useState } from "react";
 import "../CreateEvent/index.css";
 import "../../styles/global.css";
 import { Header } from "../../components/Header";
 import { AiFillHome } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
+import { EventsContext } from "../../Context";
+import ImageBanner from "../../utils/convertImage";
 
 function CreateEvent() {
-  const [file, setFile] = useState("");
-  const [name, setName] = useState("");
-  const [address, setAddress] = useState("");
-  const [complement, setComplement] = useState("");
-  const [uf, setUf] = useState("");
-  const [city, setCity] = useState("");
-  const [date, setDate] = useState("");
-  const [time, setTime] = useState("");
-  const [price, setPrice] = useState(0);
+  const { newEvent, base64 } = useContext(EventsContext);
+
+  const [event, setEvent] = useState({
+    file: "",
+    name: "",
+    title: "",
+    date: "",
+    time: "",
+    state: "",
+    city: "",
+    price: 0,
+  });
+
+  const navigate = useNavigate();
+
+  async function handleCreateNewEvent(e: FormEvent) {
+    e.preventDefault();
+
+    await newEvent({ ...event, base64 });
+
+    setEvent({
+      file: "",
+      name: "",
+      title: "",
+      date: "",
+      time: "",
+      state: "",
+      city: "",
+      price: 0,
+    });
+
+    navigate("/event");
+  }
 
   return (
     <>
@@ -29,52 +56,29 @@ function CreateEvent() {
           <fieldset>
             <div className="field">
               <label htmlFor="file">Imagem do evento</label>
-              <input
-                type="file"
-                value={file}
-                onChange={(event) => setFile(event.target.value)}
-                required
-              />
+              <ImageBanner />
             </div>
 
             <div className="field">
               <label htmlFor="name">Nome do evento</label>
               <input
                 type="text"
-                value={name}
-                onChange={(event) => setName(event.target.value)}
+                value={event.name}
+                onChange={(e) => setEvent({ ...event, name: e.target.value })}
                 required
               />
             </div>
 
             <div className="field-group">
               <div className="field">
-                <label htmlFor="address">Endereço</label>
+                <label htmlFor="state">Estado</label>
                 <input
                   type="text"
-                  value={address}
-                  onChange={(event) => setAddress(event.target.value)}
-                  required
-                />
-              </div>
-              <div className="field">
-                <label htmlFor="complement">Nº</label>
-                <input
-                  type="text"
-                  value={complement}
-                  onChange={(event) => setComplement(event.target.value)}
-                  required
-                />
-              </div>
-            </div>
-
-            <div className="field-group">
-              <div className="field">
-                <label htmlFor="uf">Estado</label>
-                <input
-                  type="text"
-                  value={uf}
-                  onChange={(event) => setUf(event.target.value)}
+                  value={event.state}
+                  onChange={(e) =>
+                    setEvent({ ...event, state: e.target.value })
+                  }
+                  maxLength={2}
                   required
                 />
 
@@ -85,8 +89,8 @@ function CreateEvent() {
                 <label htmlFor="city">Cidade</label>
                 <input
                   type="text"
-                  value={city}
-                  onChange={(event) => setCity(event.target.value)}
+                  value={event.city}
+                  onChange={(e) => setEvent({ ...event, city: e.target.value })}
                   required
                 />
               </div>
@@ -97,8 +101,8 @@ function CreateEvent() {
                 <label htmlFor="date">Data</label>
                 <input
                   type="date"
-                  value={date}
-                  onChange={(event) => setDate(event.target.value)}
+                  value={event.date}
+                  onChange={(e) => setEvent({ ...event, date: e.target.value })}
                   required
                 />
               </div>
@@ -107,8 +111,8 @@ function CreateEvent() {
                 <label htmlFor="time">Horário</label>
                 <input
                   type="time"
-                  value={time}
-                  onChange={(event) => setTime(event.target.value)}
+                  value={event.time}
+                  onChange={(e) => setEvent({ ...event, time: e.target.value })}
                   required
                 />
               </div>
@@ -117,8 +121,10 @@ function CreateEvent() {
                 <label htmlFor="price">Valor do Ingresso</label>
                 <input
                   type="price"
-                  value={price}
-                  onChange={(event) => setPrice(Number(event.target.value))}
+                  value={event.price}
+                  onChange={(e) =>
+                    setEvent({ ...event, price: Number(e.target.value) })
+                  }
                   placeholder="R$"
                   required
                 />
@@ -126,7 +132,9 @@ function CreateEvent() {
             </div>
           </fieldset>
 
-          <button type="submit">Cadastrar evento</button>
+          <button type="submit" onClick={handleCreateNewEvent}>
+            Cadastrar evento
+          </button>
         </form>
       </div>
     </>

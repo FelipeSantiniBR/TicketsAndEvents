@@ -49,6 +49,7 @@ main .card h1 {
     line-height: 30px;
 
     color: #FF8C00;
+    text-align: center;
 }
 
 main .card h2, h3, h4 {

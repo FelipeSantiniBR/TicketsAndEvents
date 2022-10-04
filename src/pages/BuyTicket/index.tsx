@@ -13,9 +13,9 @@ function BuyTicket() {
         Voltar para home
       </a>
       <div className="buy-ticket">
-        <form>
+        <div>
           <CardEvent />
-        </form>
+        </div>
       </div>
     </>
   );
