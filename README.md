@@ -36,12 +36,6 @@ O projeto teve como objetivo desenvolver um site de eventos, no qual é possíve
     <img alt="Web" src=".github/Events.PNG" width="900px">
 </h1>
 
-## :heavy_check_mark: :computer: Resultado Web
-
-<h1 align="center">
-    <img alt="Web" src=".github/web.mp4" width="900px">
-</h1>
-
 <a id="tecnologias-utilizadas"></a>
 
 ## :rocket: Tecnologias Utilizadas
